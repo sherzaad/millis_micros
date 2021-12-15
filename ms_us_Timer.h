@@ -13,7 +13,7 @@
 
 */
 
-//millisecond timer class using millis()
+//millisecond non-blocking timer class using millis()
 class mstimer {
   private:
     unsigned long _oldtime;
@@ -28,7 +28,7 @@ class mstimer {
         return 1;
       }
       
-	  return 0;
+      return 0;
     }
 
     //update period
@@ -49,7 +49,7 @@ class mstimer {
     ~mstimer() {}
 };
 
-//microsecond timer class using micros()
+//microsecond non-blocking timer class using micros()
 class ustimer {
   private:
     unsigned long _oldtime;
@@ -64,7 +64,7 @@ class ustimer {
         return 1;
       }
       
-	  return 0;
+      return 0;
     }
 
     //update period
